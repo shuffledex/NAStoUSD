@@ -2,13 +2,14 @@ var serialNumber;
 var intervalQuery;
 var NebPay = require("nebpay");
 var nebPay = new NebPay();
-var dappAddress = "n1eBfvb5B1veThkxxaVLzr7xmyDzbf6dVt6";
+var dappAddress = "n1pK7RsYFHF9Lm2MuNEyM31HFgmzYRaiDVk";
+//9f6a2891abb76a996af443db393f23d5bbe7ece1e63b847ac449845fe438fb84
 
-//var endpoint = NebPay.config.mainnetUrl;
-var endpoint = NebPay.config.testnetUrl;
+var endpoint = NebPay.config.mainnetUrl;
+//var endpoint = NebPay.config.testnetUrl;
 
-//var rpcEndpoint = "https://mainnet.nebulas.io";
-var rpcEndpoint = "https://testnet.nebulas.io";
+var rpcEndpoint = "https://mainnet.nebulas.io";
+//var rpcEndpoint = "https://testnet.nebulas.io";
 
 $(document).ready(function() {                 
     nebPay.simulateCall(dappAddress, 0, "address", null, { 
